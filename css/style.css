@@ -3593,7 +3593,7 @@ footer {
       }
 
       .img {
-        height: 350px;
+        height: 450px;
         width: 100%;
 
         img {
@@ -4007,4 +4007,144 @@ input {
 
 .blog-neon-color {
   color: #bff747;
+}
+
+/* ===== WHAT I OFFER SECTION ===== */
+.offer-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 5%;
+  border-top: 1px solid #555;
+  border-radius: 15px;
+  background-image: url("images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== HEADINGS ===== */
+.offer-section h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #bff747;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.offer-section h3 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* ===== CONTENT ===== */
+.offer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8em;
+}
+
+.offer-content p {
+  font-size: 16px;
+  color: #f5f5f4;
+  margin-bottom: 25px;
+}
+
+/* ===== AUDIENCE LIST ===== */
+.offer-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  margin-left: 6px;
+}
+
+.offer-list li {
+  font-size: 16px;
+  color: #bff747;
+  margin-bottom: 10px;
+}
+
+/* ===== SERVICE DETAILS ===== */
+.services-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-details {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.service-details li {
+  color: #f5f5f4;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* ===== GET IN TOUCH ===== */
+.get-in-touch {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #555;
+  /* text-align: center; */
+}
+
+.get-in-touch h4 {
+  font-size: 22px;
+  color: #bff747;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-link i {
+  color: #bff747;
+  margin-right: 8px;
+}
+
+.contact-link:hover {
+  color: #bff747;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .offer-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+
+  .offer-section h1 {
+    font-size: 32px;
+  }
+
+  .offer-section h3 {
+    font-size: 18px;
+  }
+
+  .get-in-touch {
+    text-align: left;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
 }

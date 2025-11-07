@@ -36,9 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function makeCall() {
-  window.location.href = "tel:+919998158353";
-}
 // Full-Slider Wrapper Functionality
 document.addEventListener("DOMContentLoaded", function () {
   const sliderWrapper = document.querySelector(".slider-wrapper1");
