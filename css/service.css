@@ -1,0 +1,563 @@
+/* Main container for the service process steps */
+.service-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #1b1b1b;
+  padding: 50px 2%;
+  background-color: #000000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 30px;
+}
+
+/* Service box styling */
+.service-process-box {
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  padding: 40px 30px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Box header section */
+.service-process-box .process-box-header i {
+  font-size: 40px;
+  color: #dfff57;
+}
+
+.service-process-box .process-box-content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Heading styling */
+.service-process-box .process-box-content h3 {
+  text-align: left;
+  color: #f5f5f4;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.service-process-box .process-box-content .main-neon-color {
+  color: #bff747;
+}
+
+/* Paragraph styling */
+.service-process-box .process-box-content p {
+  text-align: left;
+  color: #f5f5f4;
+  font-size: 18px;
+}
+
+/* Image container styling */
+.process-image-container {
+  height: 350px;
+  width: 100%;
+}
+
+/* Image styling */
+.process-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Styling for alternate box design */
+.service-process-box .child span {
+  color: #bff747;
+  font-weight: bolder;
+  line-height: 1.2em;
+  font-size: 50px;
+}
+
+.service-process-box .child p {
+  margin-top: 10px;
+  color: #f5f5f4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+/** PROCESS SECTION **/
+.process-section {
+  background-color: #000000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 2%;
+}
+
+/* Process row styling */
+.process-section .row-container-process {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Animation when scrolling */
+.process-section .row-container-process.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Process number styling */
+.process-section .index {
+  margin-left: auto;
+  text-align: right;
+  flex: 0 0 10%;
+}
+
+.process-section .index h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #dfff57;
+}
+
+/* Middle section */
+.process-section .middle {
+  flex: 1;
+  text-align: center;
+  padding-left: 240px;
+}
+
+.process-section .middle p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5f5f4;
+  text-align: left;
+}
+
+/* Process description */
+.process-section .desc {
+  flex: 1;
+  text-align: right;
+}
+
+/* Title and paragraph styling */
+.main-title {
+  color: #f5f5f4;
+  text-align: left;
+  font-size: 44px;
+  padding-left: 100px;
+}
+
+.main-pere {
+  color: #f5f5f4;
+  padding-left: 100px;
+}
+
+/* Description styling */
+.process-section .desc p {
+  font-size: 18px;
+  color: #f5f5f4;
+  text-align: left;
+}
+
+/* Separator line between steps */
+.process-section .row-container-process:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .service-process-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 20px 2% !important;
+  }
+  .impact-row {
+    flex-direction: column !important;
+  }
+  .service-process-box {
+    height: auto !important;
+    padding: 30px 20px !important;
+  }
+
+  .service-process-box .process-box-header i,
+  .service-process-box .process-box-content h3 {
+    font-size: 30px !important;
+  }
+
+  .process-section {
+    padding: 10px 2% !important;
+  }
+
+  .process-section .row-container-process {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .process-section .index {
+    order: 2;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .process-section .middle {
+    order: 1;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .process-section .desc {
+    order: 3;
+    text-align: center;
+  }
+
+  .process-section .index h1 {
+    font-size: 40px;
+  }
+
+  .process-section .middle p {
+    font-size: 20px;
+  }
+
+  .process-section .desc p {
+    font-size: 16px;
+  }
+}
+
+/* SERVICE CONTACT US BOX */
+.servicecontactusbox {
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  margin-top: 25px;
+  padding: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.servicecontactusbox i {
+  font-size: 50px;
+  color: #dfff57;
+  margin-bottom: 20px;
+}
+
+.servicecontactusbox h3 {
+  color: #bff747;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.servicecontactusbox p {
+  font-size: 16px;
+  color: #f5f5f4;
+  font-weight: 400;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.servicecontactusbox button {
+  padding: 10px 30px;
+  background-color: #bff747;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.7em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.servicecontactusbox button i {
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+
+/* Our Impact Section */
+.our-impact {
+  background-color: #000000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+/* Impact Container */
+.impact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.impact-container h2 {
+  color: #dfff57;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Impact Row - Now in a Single Line */
+.impact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Impact Cards */
+.impact-card {
+  background-color: #1b1b1b;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icons */
+.impact-card i {
+  font-size: 50px;
+  color: #bff747;
+  margin-bottom: 15px;
+}
+
+/* Impact Title */
+.impact-card h3 {
+  color: #f5f5f4;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Impact Description */
+.impact-card p {
+  color: #f5f5f4;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+
+
+.serviceprocessbox {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 60px 2%;
+  background-color: #000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 25px;
+
+  .left-side-content {
+    grid-column: 1 / span 2;
+    color: white;
+
+    .servicepage-main-first-image {
+      width: 98%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    h2 {
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 1.2em;
+      color: #ffffff;
+      text-align: left;
+
+      span {
+        color: #bff747;
+      }
+    }
+
+    p {
+      color: #f5f5f4;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 15px;
+      text-align: left;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 25px 0;
+
+      .box {
+        background-color: #1b1b1b;
+        border-radius: 25px;
+        padding: 35px 25px;
+        height: 320px;
+
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 25px;
+          text-align: left;
+          height: 50%;
+
+          i {
+            font-size: 55px;
+            color: #dfff57;
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f5f5f4;
+            text-transform: capitalize;
+          }
+        }
+
+        .body {
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .img {
+        height: 320px;
+        width: 98%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+
+  .right-side-digital {
+    position: sticky;
+    top: 60px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+
+    .box {
+      background-color: #1b1b1b;
+      border-radius: 25px;
+
+      h2 {
+        padding: 35px 35px 25px;
+        color: #ffffff;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 35px;
+        color: #ffffff;
+
+        li {
+          display: flex;
+          align-items: center;
+          text-align: left;
+          padding: 18px 0;
+          justify-content: space-between;
+
+          a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+          }
+
+          i {
+            color: #bff747;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .contact-us-box {
+      background-color: #1b1b1b;
+      border-radius: 25px;
+      margin-top: 20px;
+      padding: 25px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      i {
+        font-size: 45px;
+        color: #dfff57;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        color: #bff747;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 16px;
+        color: #f5f5f4;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+      }
+
+      button {
+        padding: 8px 25px;
+        background-color: #bff747;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 700;
+        color: #000000;
+
+        i {
+          color: #000000;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,426 @@
+.digibrand-container {
+  background-color: #000000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.digibrand-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Left side content */
+.digibrand-left-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Header Section */
+.digibrand-who {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.digibrand-who-asterisk {
+  color: #b3ff00;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.digibrand-who-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Main Heading */
+.digibrand-hero-text {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.digibrand-highlight {
+  color: #b3ff00;
+  font-weight: 500;
+}
+
+/* Description */
+.digibrand-description {
+  max-width: 650px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+/* Video and review section - Horizontal layout */
+.digibrand-media-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Video section */
+.digibrand-video-section {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.digibrand-video-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.digibrand-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #b3ff00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.digibrand-play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #000;
+  margin-left: 5px;
+}
+
+/* Review section */
+.digibrand-review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.digibrand-stars {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.digibrand-star {
+  color: #b3ff00;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.digibrand-review-count {
+  margin-bottom: 1.5rem;
+}
+
+.digibrand-avatars {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.digibrand-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444;
+  margin-right: -10px;
+  border: 2px solid #000;
+}
+
+.digibrand-cta {
+  display: flex;
+  align-items: center;
+  color: #b3ff00;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.digibrand-cta-icon {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+/* Right side stats */
+.digibrand-right-content {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.digibrand-stat-card {
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 80%;
+  border: 1px solid rgb(42, 42, 42);
+  position: relative;
+  /* Added this */
+}
+
+
+.digibrand-stat-card-down {
+
+  position: relative;
+  top: 1.5rem;
+}
+
+.digibrand-stat-card-up {
+
+  position: relative;
+  top: 1.2rem;
+}
+
+.digibrand-stat-icon {
+  color: #b3ff00;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+.digibrand-stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b3ff00;
+  margin-top: 2.8rem;
+}
+
+.digibrand-stat-description {
+  font-size: 1rem;
+  margin-top: 34px;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .digibrand-content {
+    flex-direction: column;
+  }
+
+  .digibrand-right-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .digibrand-hero-text {
+    font-size: 2.5rem;
+  }
+
+  .digibrand-media-section {
+    flex-direction: column;
+  }
+
+  .digibrand-video-section {
+    width: 100%;
+  }
+
+  .digibrand-right-content {
+    grid-template-columns: 1fr;
+  }
+
+  .ececuitive-partners {
+    padding: 20px 2rem;
+  }
+
+  .box-partners {
+    display: block !important;
+    padding: 0px 0px !important;
+  }
+
+  .ag2025-container {
+    height: auto !important;
+  }
+}
+
+/* HAVE ANY QUESTIONS? */
+
+.ag2025-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  background-image: url("../images/section-bg-shape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+}
+
+.ag2025-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.ag2025-image {
+  flex: 1;
+  padding-right: 20px;
+  position: relative;
+}
+
+.ag2025-main-img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.ag2025-overlay-img {
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 192px;
+  transform: translate(50%, -30%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ag2025-faq-section {
+  flex: 1;
+}
+
+.ag2025-header {
+  margin-bottom: 30px;
+}
+
+.ag2025-small-heading {
+  color: #8cc63f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ag2025-small-heading::before {
+  content: "✱";
+  color: #8cc63f;
+  font-size: 20px;
+}
+
+.ag2025-main-heading {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ag2025-highlight {
+  color: #8cc63f;
+  font-weight: 700;
+}
+
+.ag2025-faq-container {
+  width: 100%;
+}
+
+.ag2025-faq-item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ag2025-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ag2025-faq-answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.ag2025-faq-answer-content {
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.ag2025-faq-item.ag2025-active .ag2025-faq-answer {
+  max-height: 200px;
+  padding-top: 0;
+}
+
+.ag2025-contact {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.ag2025-phone-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #8cc63f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .ag2025-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ag2025-image {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .ag2025-main-img {
+    width: 60%;
+  }
+
+  .ag2025-overlay-img {
+    width: 30%;
+    transform: translate(30%, -20%);
+  }
+}
