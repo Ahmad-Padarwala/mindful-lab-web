@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindful Stack Lab</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./images/mindful-favicon.webp">
+  <!-- css icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav>
+    <div class="logo">
+      <img src="./images/mindful-logo1-removebg.png" alt="" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html" class="nav-link active-nav">Home</a></li>
+        <li><a href="pages/aboutpage.html" class="nav-link">About Us</a></li>
+        <li class="dropdown"><a href="./pages/services.html" class="nav-link">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="pages/strategy-consulting.html">Strategy Consulting</a></li>
+            <li><a href="pages/growth-sales-marketing.html">Growth, Sales & Marketing Solutions</a></li>
+            <li><a href="pages/digital-transformation-automation.html">Digital Transformation & Intelligent
+                Automation</a></li>
+            <li><a href="pages/customer-experience-optimization.html">Customer Experience Optimization</a></li>
+            <li><a href="pages/performance-operational-excellence.html">Performance Optimization & Operational
+                Excellence</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="pages/digitalMarketing.html" class="nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="pages/blog.html" class="nav-link">Blog</a>
+        </li>
+        <li>
+          <a href="pages/contactus.html" class="nav-link">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- main slider start -->
+  <div class="main-slider">
+    <video autoplay muted loop class="background-video">
+      <source src="./images/mainbgvideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- <img class="background-video" src="../images/post-1.jpg" alt="" /> -->
+    <div class="slider-text">
+      <h1>
+        Empowering Digital Transformation Through Technology<br />
+        <span id="animated-text">Startegy Counsalting</span>
+      </h1>
+    </div>
+    <div class="box-conatiner">
+      <div class="logo"></div>
+      <div class="txt">
+        <p>
+          At Mindful Stack Lab, we don’t just build software — we build possibilities. Our team combines innovation,
+          intelligence, and expertise to craft technology solutions that drive measurable impact. From custom software
+          and web application development to enterprise automation, digital transformation, and AI integration, we help
+          businesses unlock new potential and achieve sustainable growth. Together, we turn your vision into powerful
+          digital reality.
+        </p>
+      </div>
+    </div>
+    <div class="footer-logo">
+      <button class="main-slider-btn" onclick="contectUs()">
+        <a href="./pages/contactus.html">get in touch</a></button><i onclick="contectUs()"
+        class="fa-solid fa-arrow-right rightArrow"></i>
+    </div>
+  </div>
+  <!-- main slider end -->
+
+  <!-- slide text start -->
+  <marquee direction="left" scrollamount="10" class="slide-text-horizonatal">
+    <p>
+      * Software Development & IT Innovation * Digital Transformation Through AI and Automation
+    </p>
+  </marquee>
+  <!-- slide text end -->
+
+  <!-- about us start -->
+
+  <div class="about-container">
+    <div class="about-left">
+      <h2>$ Know Us Better</h2>
+      <p>
+        At <span>Mindful Stack Lab</span>, we empower brands with
+        <span>smart technology</span> and <span>custom solutions</span> for growth.
+      </p>
+
+      <button class="Ping-us-btn slider-btn" onclick="aboutUs()">Ping Us</button>
+      <i onclick="aboutUs()" class="fa-solid fa-arrow-right rightArrow"></i>
+    </div>
+    <div class="about-right">
+      <div class="box">
+        <div class="logo">
+          <p><i class="fa-solid fa-gamepad"></i></p>
+        </div>
+        <div class="text-wrapper">
+          <div class="bullet">
+            <span class="bullet-text"></span>
+          </div>
+          <div class="text-content">
+            <div class="title">
+              <span>E-Commerce & Retail </span>
+            </div>
+            <div class="discribtion">
+              <p>
+                Custom e-commerce platform development and comprehensive retail technology solutions for modern,
+                Omnichannel retail solutions and advanced inventory management systems for seamless customer experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second box -->
+      <div class="box">
+        <div class="logo">
+          <p><i class="fa-solid fa-laptop"></i></p>
+        </div>
+        <div class="text-wrapper">
+          <div class="bullet">
+            <span class="bullet-text"></span>
+          </div>
+          <div class="text-content">
+            <div class="title">
+              <span>Energy & Utilities</span>
+            </div>
+            <div class="discribtion">
+              <p>
+                Advanced smart grid solutions and comprehensive energy management software for utility companies,
+                Sustainability technology platforms and renewable energy optimization systems for green energy
+                initiatives
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third box -->
+      <div class="box">
+        <div class="logo">
+          <p><i class="fa-solid fa-lightbulb"></i></p>
+        </div>
+        <div class="text-wrapper">
+          <div class="bullet">
+            <span class="bullet-text"></span>
+          </div>
+          <div class="text-content">
+            <div class="title">
+              <span>Logistics & Supply Chain</span>
+            </div>
+            <div class="discribtion">
+              <p>
+                Comprehensive supply chain management software and logistics optimization solutions for global
+                operations, Advanced warehouse management systems and intelligent transportation solutions for efficient
+                delivery
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth box -->
+      <div class="box">
+        <div class="logo">
+          <p><i class="fa-solid fa-briefcase"></i></p>
+        </div>
+        <div class="text-wrapper">
+          <div class="bullet">
+            <span class="bullet-text"></span>
+          </div>
+          <div class="text-content">
+            <div class="title">
+              <span>Fintech & Banking</span>
+            </div>
+            <div class="discribtion">
+              <p>
+                Custom fintech software development for digital banking solutions and financial technology innovation,
+                Blockchain technology integration, secure payment processing systems, and advanced financial risk
+                management platforms
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about us end -->
+
+  <!-- our services start -->
+
+  <div class="our-services">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>OUR SERVICES</h2>
+        <p>Modern IT Services Delivering <span>Better Tech Experiences</span></p>
+      </div>
+      <div class="right-side">
+        <p>
+          Join a community that thrives on collaboration and innovation. We’re
+          passionate about helping your brand achieve unparalleled growth.
+        </p>
+        <button class="slider-btn" onclick="ourServices()">All services</button><i onclick="ourServices()"
+          class="fa-solid fa-arrow-right rightArrow"></i>
+      </div>
+    </div>
+
+    <!-- Slider Wrapper: contains the slider and button set -->
+    <div class="slider-wrapper">
+      <div class="slider-container" style="color: beige">
+        <div class="services-slider">
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem big-icon"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">Technology Consulting<br /></h3>
+              <h3>Turning Vision into Digital Reality</h3>
+              <p>
+                We guide businesses through every stage of their digital journey —
+                from IT strategy and software planning to implementation and optimization.
+                Our experts align technology with your goals to build scalable, future-ready solutions.
+              </p>
+            </div>
+
+          </div>
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">
+                Software Development & IT Solutions
+              </h3>
+              <h3>Accelerate Your Digital Growth</h3>
+              <p>
+                Build scalable, secure, and high-performance software designed to empower your business.
+                From web and mobile applications to enterprise systems, we turn technology into measurable growth.
+              </p>
+            </div>
+
+          </div>
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">
+                Web Application & E-Commerce Solutions
+              </h3>
+              <h3>Empowering Digital Businesses</h3>
+              <p>
+                We design and develop powerful web and e-commerce applications that enhance user experience,
+                optimize performance, and drive business growth through technology and innovation.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">
+                Mobile App Development
+              </h3>
+              <h3>Building Seamless Mobile Experiences</h3>
+              <p>
+                We design and develop high-performance mobile applications that combine functionality with great user
+                experience.
+                From iOS and Android to cross-platform solutions, our apps help businesses engage customers, streamline
+                operations,
+                and drive digital growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">
+                User Experience (UX) & Interface Optimization
+              </h3>
+              <h3>Designing Seamless Digital Journeys</h3>
+              <p>
+                We craft intuitive, user-focused software and applications that deliver seamless interactions,
+                enhance usability, and elevate overall digital experiences to keep users engaged and satisfied.
+              </p>
+            </div>
+
+          </div>
+          <div class="service-box">
+            <div class="logo">
+              <p><i class="fa-solid fa-gem"></i></p>
+              <p>
+                <i class="fa-solid fa-arrow-right right-arrow-without-bg"></i>
+              </p>
+            </div>
+            <div class="detail">
+              <h3 class="neon-color-heading">
+                Software Performance Optimization
+              </h3>
+              <h3>Delivering Speed, Stability & Scalability</h3>
+              <p>
+                We fine-tune applications and systems for maximum efficiency and reliability.
+                Through code optimization, infrastructure enhancement, and performance monitoring,
+                we ensure your software runs faster, scales better, and delivers a flawless user experience.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Navigation Buttons on the right side of the slider -->
+      <div class="slider-buttons">
+        <button class="prev" onclick="scrollLeft()">&#10094;</button>
+        <button class="next" onclick="scrollRight()">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="services-footer">
+      <p>
+        Let’s make something great work together.
+        <a href="#"> Get Free Quote</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- our services end -->
+
+  <!-- Expertise start -->
+  <div class="expertise">
+    <div class="expertise-border">
+      <div class="left-expertise">
+        <h2>Expertise that drives <span>Digital Excellence</span></h2>
+        <div class="box">
+          <div class="child">
+            <span>+ 80 %</span>
+            <p>Faster project delivery through agile software development.</p>
+          </div>
+          <div class="child">
+            <span>+ 75 %</span>
+            <p>Improved system performance with optimized architecture and code.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-expertise">
+        <div>
+          <p>
+            <strong>80% Faster Product Deployment:</strong> Using agile methodologies and DevOps automation,
+            we accelerate software delivery timelines while maintaining top-tier quality and reliability.
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>
+            <strong>75% Increase in System Efficiency:</strong> Through code optimization, API integration,
+            and cloud scalability, our solutions ensure seamless performance and reduced downtime.
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>
+            <strong>60% Boost in User Engagement:</strong> With intuitive UI/UX design and robust mobile applications,
+            we help businesses deliver exceptional digital experiences that keep users coming back.
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>
+            <strong>50% Reduction in Operational Costs:</strong> Our intelligent automation and software
+            optimization frameworks streamline workflows and enhance productivity across your organization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expertise end -->
+
+  <!-- WHY CHOOSE start -->
+  <div class="why-choose">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>WHY CHOOSE</h2>
+        <p>What <span>Makes Us</span> Different from Others</p>
+      </div>
+      <div class="right-side">
+        <p>
+          We combine deep technical expertise with a customer-first mindset to build reliable, high-performance
+          software.
+          Our focus on innovation, quality, and trust ensures every solution drives real, lasting results.
+        </p>
+      </div>
+    </div>
+    <div class="parent">
+      <div class="child">
+        <div class="box-parent">
+          <div class="box">
+            <span>Innovative Development Approach</span>
+            <p>
+              We combine creativity, strategy, and technology to build software that solves real business challenges.
+              Our agile process ensures efficiency, flexibility, and continuous improvement at every stage.
+            </p>
+          </div>
+          <div class="box">
+            <span>Custom-Built Solutions</span>
+            <p>
+              Every product we develop is tailored to your specific goals and infrastructure.
+              From web apps to enterprise software, our solutions are built to scale with your growth.
+            </p>
+          </div>
+          <div class="box">
+            <span>End-to-End Project Support</span>
+            <p>
+              From concept and design to deployment and maintenance, we manage the entire development lifecycle —
+              ensuring smooth delivery, consistent communication, and lasting performance.
+            </p>
+          </div>
+          <div class="box">
+            <span>Technical Expertise</span>
+            <p>
+              Our team of skilled developers, engineers, and IT consultants bring deep technical knowledge
+              across modern frameworks, cloud systems, and emerging technologies.
+            </p>
+          </div>
+          <div class="box">
+            <span>Cutting-Edge Technologies</span>
+            <p>
+              We leverage the latest in AI, automation, and cloud computing to build intelligent, future-ready
+              software that enhances efficiency and business performance.
+            </p>
+          </div>
+          <div class="box">
+            <span>Commitment to Quality</span>
+            <p>
+              We focus on delivering secure, high-performance, and reliable software that drives measurable results
+              and provides long-term value for your business.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="child left-img glass-shine">
+        <img src="images/why-choose-image.jpg" alt="" />
+      </div>
+    </div>
+
+  </div>
+  <!-- WHY CHOOSE end  -->
+
+  <!-- join AGENCY start -->
+  <!-- <div class="agency">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>JOIN AGENCY</h2>
+        <p>Join our <span>agency</span> of creative innovators</p>
+      </div>
+      <div class="right-side">
+        <p>
+          Join our innovative tech community to build, learn, and grow together.
+          We welcome passionate developers, creators, and thinkers who are ready to shape the future of technology.
+        </p>
+      </div>
+    </div>
+    <div class="agency-parent">
+      <div class="box">
+        <div class="logo">
+          <span onclick="togglelinkedin()"><i class="fab fa-linkedin"></i></span>
+        </div>
+        <div class="txt">
+          <h3>Follow Us On Twitter</h3>
+          <p>@eternalgrowth</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="logo">
+          <span onclick="toggleInsta()"><i class="fab fa-instagram"></i></span>
+        </div>
+        <div class="txt">
+          <h3>Follow Us On Twitter</h3>
+          <p>@eternalgrowth</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="logo">
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="txt">
+          <h3>Follow Us On Twitter</h3>
+          <p>@artistic_official</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- join AGENCY end  -->
+
+  <!-- process start -->
+
+  <div class="process">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>HOW IT WORK</h2>
+        <p>Our proven <span>process</span> for achieving success</p>
+      </div>
+      <div class="right-side">
+        <p>
+          Our development process blends innovation, strategy, and technology to deliver
+          high-quality software solutions that are efficient, scalable, and results-driven.
+        </p>
+      </div>
+    </div>
+    <div class="process-parent">
+      <div class="process-box">
+        <div class="header">
+          <h3>Discover</h3>
+        </div>
+        <div class="body">
+          <p class="p-head">
+            Understanding Your Vision, Defining the Scope.
+          </p>
+          <br />
+          <p>
+            We begin by exploring your business goals, challenges, and technology needs.
+            Through requirement analysis and discovery workshops, we define project objectives,
+            user expectations, and technical possibilities.
+            <strong>Outcome:</strong> A clear project roadmap and technical strategy aligned with your vision.
+          </p>
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <h3>Step</h3>
+            <p>01</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-box">
+        <div class="header">
+          <h3>Design</h3>
+        </div>
+        <div class="body">
+          <p class="p-head">
+            Creating Intuitive Designs and Scalable Architectures.
+          </p>
+          <br />
+          <p>
+            Our UI/UX experts and software architects translate ideas into
+            user-friendly designs and robust system structures.
+            Every interface and workflow is carefully planned to ensure performance, security, and scalability.
+            <strong>Outcome:</strong> A well-structured design blueprint and engaging user experience prototype.
+          </p>
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <h3>Step</h3>
+            <p>02</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-box">
+        <div class="header">
+          <h3>Develop</h3>
+        </div>
+        <div class="body">
+          <p class="p-head">Building Powerful, Reliable Software Solutions.</p>
+          <br />
+          <p>
+            Using modern technologies and agile methodologies, we develop clean, secure,
+            and scalable software tailored to your business needs.
+            Our development process ensures continuous testing, transparency, and timely delivery.
+            <strong>Outcome:</strong> A high-quality, functional product built for performance and scalability.
+          </p>
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <h3>Step</h3>
+            <p>03</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-box">
+        <div class="header">
+          <h3>Deploy & Support</h3>
+        </div>
+        <div class="body">
+          <p class="p-head">Launching, Monitoring, and Evolving with You.</p>
+          <br />
+          <p>
+            After deployment, we provide continuous support, updates, and performance monitoring
+            to keep your systems running smoothly.
+            Our team ensures seamless integration, security maintenance, and ongoing optimization.
+            <strong>Outcome:</strong> A stable, optimized, and future-ready digital solution that evolves with your
+            business.
+          </p>
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <h3>Step</h3>
+            <p>04</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- process end -->
+
+  <!-- features start -->
+  <div class="features">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>FEATURES</h2>
+        <p>Driving <span>Transformation </span> Across Industries</p>
+      </div>
+      <div class="right-side">
+        <p>
+          At Mindful Stack Lab, we design and develop powerful software solutions that transform the way businesses
+          operate.
+          Our team takes pride in building secure, scalable, and high-performance applications that drive innovation and
+          measurable growth.
+          Explore some of our recent projects and success stories below.
+        </p>
+        <button class="slider-btn" onclick="projectPage()">learn more</button><i
+          class="fa-solid fa-arrow-right rightArrow" onclick="contectUs()"></i>
+      </div>
+    </div>
+    <div class="features-parent">
+      <div class="box">
+        <div class="img glass-shine">
+          <img src="images/01.jpg" alt="" />
+        </div>
+        <div class="txt">
+          <h3>Go Wheels</h3>
+          <p>
+            A ride-hailing platform determined to stand out in a crowded market. Our team performed comprehensive
+            feature analysis, competitor research, and user-experience assessments to refine their service offerings. We
+            continue to support their market entry strategy, ensuring they launch with a competitive edge that resonates
+            with modern consumers.
+          </p>
+
+        </div>
+      </div>
+      <div class="box">
+        <div class="img glass-shine">
+          <img src="images/02.jpg" alt="" />
+        </div>
+        <div class="txt">
+          <h3>Lucky Bricks</h3>
+          <p>
+            A traditional brick manufacturer grappling with manual workflows and persistent bottlenecks. A traditional
+            brick manufacturer grappling
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- features end -->
+
+  <!-- Content Creation And Strategy start -->
+
+  <!-- <div class="Content-Creation" style="padding: 100px 5%;">
+    <div class="heading">
+      <div class="txt">
+        <h2>Content Creation And Strategy</h2>
+        <p>High-quality, engaging content across blogs, videos, and graphics designed to captivate and retain audiences.
+        </p>
+      </div>
+      <div class="right">
+        <i class="fa-solid fa-arrow-right rotate-icon"></i>
+      </div>
+
+
+    </div>
+    <div class="body">
+      <div class="slider-icon">
+        <img src="images/slider/agency-supports-logo-2-1.svg" alt="">
+      </div>
+      <div class="slider-icon">
+        <img src="images/slider/agency-supports-logo-2-1.svg" alt="">
+      </div>
+      <div class="slider-icon">
+        <img src="images/slider/agency-supports-logo-2-1.svg" alt="">
+      </div>
+      <div class="slider-icon">
+        <img src="images/slider/agency-supports-logo-2-1.svg" alt="">
+      </div>
+      <div class="slider-icon">
+        <img src="images/slider/agency-supports-logo-2-1.svg" alt="">
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Content Creation And Strategy end -->
+
+  <!-- WORK start -->
+  <!--     
+    <div class="work">
+        <div class="center-text">
+            <div class="left-side">
+                <h2>HOW IT WORK</h2>
+                <p>Our proven <span>process</span> for achieving success
+                </p>
+            </div>
+            <div class="right-side">
+                <p> Our proven process combines research, strategy, and creativity to deliver tailored solutions that
+                    drive measurable results.
+                </p>
+                <button>learn more</button><i class="fa-solid fa-arrow-right rightArrow "></i>
+
+            </div>
+        </div>
+        <div class="all-images">
+            <div class="box">
+                <img src="images/project-1.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-2.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-3.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-4.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-5.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-6.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-7.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-8.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+            <div class="box">
+                <img src="images/project-9.jpg" alt="">
+                <h3>Dynamic Digital Campaign</h3>
+            </div>
+        </div>
+    </div>
+ -->
+
+  <!-- WORK end -->
+
+  <!-- TESTIMONIALS start -->
+  <div class="testimonials">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>TESTIMONIALS</h2>
+        <p>Read what to say about <span>working with us</span></p>
+      </div>
+      <div class="right-side">
+        <p>
+          Discover how our clients have achieved success through our
+          innovative solutions and dedicated support.
+        </p>
+        <button class="slider-btn" onclick="testoPage()">All Testimonials</button>
+        <i class="fa-solid fa-arrow-right rightArrow"></i>
+      </div>
+    </div>
+    <div class="testimonials-parent">
+      <div class="child-box">
+        <span>4.9</span>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p>( 40+ Reviews )</p>
+        <h3>Customer experiences that speak for themselves</h3>
+      </div>
+      <div class="slider-container">
+        <div class="slider-wrapper slider-wrapper1">
+          <!-- Slide 1 -->
+          <div class="child testimonial-child">
+            <h4>Lucky Bricks</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Working with Mindful Stack Lab has been a game-changer for our business. Our processes were
+              completely manual and prone to errors, especially in finance. The team at Mindful Stack Lab not
+              only conducted thorough research but also suggested and developed a tailored ERP solution for
+              us. Since the implementation, our operations have become highly streamlined, errors have
+              drastically reduced, and we've saved significant time on day-to-day tasks. Their expertise and
+              dedication have truly transformed our business. We highly recommend Mindful Stack Lab for their
+              exceptional digital transformation services!.
+            </p>
+            <div class="user">
+              <div class="left-side">
+                <img src="images/author-1.jpg" alt="" />
+                <p>
+                  <strong>Sarah Mitchell</strong> <br />Marketing Director
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="child testimonial-child">
+            <h4>Unilog Care Devices</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Mindful Stack Lab has been instrumental in transforming our business at Unilog Device Care. With
+              their expert guidance and innovative marketing strategies, we have seen a remarkable boost in
+              sales across our product lines, including hijama machinery, aesthetic devices, electro
+              massagers, herbal formulations, acupuncture and acupressure equipment, muscle stimulators, and
+              physiotherapy products. Their team continues to manage our digital marketing and social media
+              handles with precision, ensuring consistent engagement and growth. Their commitment to our
+              success has made a significant impact, and we couldn’t be happier with the results. Highly
+              recommended for any business looking to scale effectively!
+            </p>
+            <div class="user">
+              <div class="left-side">
+                <img src="images/author-2.jpg" alt="" />
+                <p><strong>John Anderson</strong> <br />CTO</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="child testimonial-child">
+            <h4>Go Wheels</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Mindful Stack Lab has been a game-changer for Go Wheels. Their feature analysis and introduction of
+              a ride-sharing option have significantly enhanced our platform. They’ve also supported our
+              brand’s growth with user-centric improvements and data-driven marketing strategies, boosting
+              engagement and visibility.
+
+              Their expertise and dedication make them an invaluable partner in our journey to becoming a
+              leading ride-hailing platform.
+            </p>
+            <div class="user">
+              <div class="left-side">
+                <img src="images/author-1.jpg" alt="" />
+                <p><strong>Emma Watson</strong> <br />E-commerce Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional slides... -->
+          <!-- Slide 4 -->
+          <div class="child testimonial-child">
+            <h4>Azfaar Fragrances</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+              Mindful Stack Lab has been a transformative partner for Azfaar Fragrances. Their expertise in
+              building our eCommerce platform has been invaluable, providing us with a seamless and
+              user-friendly online presence.
+
+              They have taken charge of our digital marketing, focusing on brand growth and sales generation.
+              Their strategies have significantly enhanced our market reach and helped us achieve remarkable
+              business growth.
+
+              We highly appreciate their dedication and expertise, which have made a lasting impact on our
+              journey in the perfume industry.
+            </p>
+            <div class="user">
+              <div class="left-side">
+                <img src="images/author-1.jpg" alt="" />
+                <p><strong>Lisa Rodriguez</strong> <br />Creative Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <i class="fa-solid fa-arrow-left prev-slide"></i>
+          <i class="fa-solid fa-arrow-right next-slide"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS end -->
+
+  <!-- 4 box cost permisson dat support start -->
+
+  <!-- <div class="box-4">
+      <div class="box-parent">
+        <div class="box">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+          <h3>low cost</h3>
+          <li>Competitive fee</li>
+          <li>Flexible rates</li>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-landmark"></i>
+          <h3>Permission Less</h3>
+          <li>Open for integration</li>
+          <li>Run your own nodes</li>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-unlock"></i>
+          <h3>Secure Data</h3>
+          <li>Open source sheet</li>
+          <li>360 Security</li>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-headset"></i>
+          <h3>24 X 7 Support</h3>
+          <li>Toll free number</li>
+          <li>Ticket systems</li>
+        </div>
+      </div>
+    </div> -->
+  <!-- 4 box cost permisson dat support end-->
+
+  <!-- benefits  START-->
+  <!-- <div class="benefits">
+        <div class="center-text">
+            <div class="left-side">
+                <h2>KEY BENEFITS</h2>
+                <p>Discover the <span>benefits</span>of choosing us today</p>
+            </div>
+            <div class="right-side">
+                <p>Experience unparalleled creativity, data-driven strategies, and dedicated support that drive real
+                    results for your brand.
+                </p>
+            </div>
+
+        </div>
+        <div class="benefits-card-parent">
+            <div class="box">
+                <div class="header">
+                    <h4>01</h4>
+                </div>
+                <div class="body">
+                    <a href="#"><span><i class="fa-regular fa-note-sticky"></i></span></a>
+                </div>
+                <div class="footer">
+                    <h3>Personalized Approach</h3>
+                    <p>We customize strategies to fit your brand's specific needs, ensuring alignment.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="header">
+                    <h4>01</h4>
+                </div>
+                <div class="body">
+                    <a href="#"><span><i class="fa-solid fa-gear"></i> </span></a>
+                </div>
+                <div class="footer">
+                    <h3>Personalized Approach</h3>
+                    <p>We customize strategies to fit your brand's specific needs, ensuring alignment.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="header">
+                    <h4>01</h4>
+                </div>
+                <div class="body">
+                    <a href="#"><span><i class="fa-regular fa-note-sticky"></i></span></a>
+                </div>
+                <div class="footer">
+                    <h3>Personalized Approach</h3>
+                    <p>We customize strategies to fit your brand's specific needs, ensuring alignment.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="header">
+                    <h4>01</h4>
+                </div>
+                <div class="body">
+                    <a href="#"><span><i class="fa-solid fa-headset"></i></span></a>
+                </div>
+                <div class="footer">
+                    <h3>Personalized Approach</h3>
+                    <p>We customize strategies to fit your brand's specific needs, ensuring alignment.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  <!-- benefits  END -->
+
+  <!-- NEWS start -->
+  <!-- <div class="news">
+    <div class="center-text">
+      <div class="left-side">
+        <h2>LATEST NEWS</h2>
+        <p>Insights on digital <span>innovation</span>and growth</p>
+      </div>
+      <div class="right-side">
+        <p>
+          Explore the latest trends, strategies, and tools driving digital
+          innovation and helping businesses thrive in a rapidly evolving
+          digital landscape.
+        </p>
+        <div class="footer-logo">
+          <button class="slider-btn">
+            <a href="./pages/blog.html">Insights</a></button><i onclick="blogPage()"
+            class="fa-solid fa-arrow-right rightArrow"></i>
+        </div>
+      </div>
+    </div>
+    <div class="news-parent">
+      <div class="card">
+        <div class="header glass-shine">
+          <img src="images/post-1.jpg" alt="" />
+        </div>
+        <div class="body">
+          <p>0 to 100: The Big Picture of Corporate Strategy</p>
+          <a href="./pages/blog02.html">read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header glass-shine">
+          <img src="images/post-2.jpg" alt="" />
+        </div>
+        <div class="body">
+          <p>
+            The Power of Diversification: Navigating Market Volatility with
+            Confidence
+          </p>
+          <a href="./pages/blog02.html">read more</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header glass-shine">
+          <img src="images/post-3.jpg" alt="" />
+        </div>
+        <div class="body">
+          <p>Fueling Business Growth: Strategies for Success</p>
+          <a href="./pages/blog02.html">read more</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- NEWS end -->
+
+  <!-- LET'S COLLABORATE start -->
+
+  <div class="collaborate">
+    <h3>LET'S COLLABORATE</h3>
+    <div class="text">
+      <h2>
+        LET'S WORK <br />
+        TOGETHER
+      </h2>
+      <a href="./pages/contactus.html">
+        <p>Get In Touch</p>
+        <i class="fa-solid fa-arrow-right rightArrowBig"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- LET'S COLLABORATE end -->
+
+  <!-- footer start -->
+  <footer class="footer-container">
+    <div class="footer-box">
+      <img src="./images/mindful-logo2.png" alt="" />
+      <div class="logo-footer">
+        <p class="footer-p">
+          Mindful Stack Lab is a forward-thinking software development company committed to turning ideas into powerful
+          digital solutions.
+          We specialize in custom software, web and mobile app development, cloud integration, and digital
+          transformation — delivering innovative, scalable, and reliable technology that drives business growth and
+          success.
+        </p>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h4>quick link</h4>
+      <ul class="footer-link">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/aboutpage.html">About us</a></li>
+        <li><a href="./pages/services.html">Service</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>support</h4>
+      <ul class="footer-link">
+        <li><a href="pages/contactus.html">Contact us</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>Contact Info</h4>
+      <ul class="footer-link">
+        <li>
+          <a href="#">
+            206, Setu Square Business Hub, New CG Road, Chandkheda, Ahmedabad, Gujarat</a>
+        </li>
+        <li> <a href="mailto:ankur.mindfulstack@gmail.com" class="email-link">ankur.mindfulstack@gmail.com</a></li>
+
+        <li>
+          <a href="tel:+919574667926">
+            +91 95746 67926
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="main-cpyroght">
+    <div class="footer-bottom">
+      <hr />
+      <div class="footer-copyright">
+        <h4 class="copy">Copyright © 2024 All Rights Reserved.</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer end -->
+</body>
+<script src="js/index.js"></script>
+
+</html>

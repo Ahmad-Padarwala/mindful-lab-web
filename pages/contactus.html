@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/mindful-favicon.webp">
+  <title>Contact Us</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- css icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      emailjs.init("U0HMsiPzBCFxfuUHk");
+    });
+  </script>
+  <style>
+    .toast-notification {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #28a745;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1000;
+      left: 50%;
+      bottom: 30px;
+    }
+
+    .toast-notification.show {
+      visibility: visible;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav>
+    <div class="logo">
+      <img src="../images/mindful-logo1-removebg.png" alt="" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="./aboutpage.html" class="nav-link">About Us</a></li>
+        <li class="dropdown"><a  href="pages/services.html" class="nav-link">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="./strategy-consulting.html">Strategy Consulting</a></li>
+            <li><a href="./growth-sales-marketing.html">Growth, Sales & Marketing Solutions</a></li>
+            <li><a href="./digital-transformation-automation.html">Digital Transformation & Intelligent
+                Automation</a></li>
+            <li><a href="./customer-experience-optimization.html">Customer Experience Optimization</a></li>
+            <li><a href="./performance-operational-excellence.html">Performance Optimization & Operational
+                Excellence</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./digitalMarketing.html" class="nav-link">Digital</a>
+        </li>
+        <li>
+          <a href="./blog.html" class="nav-link">Blog</a>
+        </li>
+        <li>
+          <a href="./contactus.html" class="nav-link active-nav">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- main page  start-->
+  <div class="header-page-text">
+    <h1>Contact <span> us</span></h1>
+    <a href="#">Home * <span>Contact us</span></a>
+  </div>
+  <!-- main page end -->
+
+  <!-- slide text start -->
+  <marquee direction="left" scrollamount="10" class="slide-text-horizonatal">
+    <p> * Strategy Consulting * Analytics & Reporting * Digital Marketing * Analytics & Reporting</p>
+  </marquee>
+  <!-- slide text end -->
+
+  <!-- contact us page start -->
+  <div class="contactuspage">
+    <div class="detail">
+      <h2>Stay Connected with Us!</h2>
+      <p>We're here to help! Whether you have inquiries, need assistance, or want to collaborate on something amazing,
+        don't hesitate to reach out. We'd love to connect with you!</p>
+      <div class="call-email">
+        <div class="box">
+          <i class="fa-solid fa-phone"></i>
+          <a href="#">Talk to an Expert</a>
+          <a href="tel:+919574667926" class="call-button">+91 95746 67926</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#">Drop Us a Mail</a>
+          <a href="mailto:ankur.mindfulstack@gmail.com" class="email-link">ankur.mindfulstack@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-loaction">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>206, Setu Square Business Hub,
+        </span>
+        <br>
+        <span class="span-2"> New CG Road, Chandkheda, Ahmedabad, Gujarat</span>
+      </div>
+    </div>
+    <form class="contact" id="contact-form">
+      <input type="text" placeholder="First Name" class="first-name" id="name" required>
+      <input type="text" class="last-name" placeholder="Last Name">
+      <input type="number" placeholder="Enter Number" id="Mobile" required>
+      <input type="email" placeholder="Enter Email" id="email" required>
+      <textarea name="" rows="5" id="message" placeholder="Message..." required></textarea>
+      <button type="submit" id="submit-btn">Submit Message</button>
+    </form>
+    <!-- Toast notification container -->
+    <div id="toast" class="toast-notification"></div>
+  </div>
+  <!-- contact us page end -->
+
+
+  <!-- map start -->
+  <div class="map">
+    <div class="container-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777315.191442447!2d68.68407244713491!3d22.399485081469855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1739121796674!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!-- map end -->
+
+  <!-- LET'S COLLABORATE -->
+  <div class="collaborate">
+    <h3>LET'S COLLABORATE</h3>
+    <div class="text">
+      <h2>
+        LET'S WORK <br />
+        TOGETHER
+      </h2>
+      <a href="#">
+        <p>Get In Touch</p>
+        <i class="fa-solid fa-arrow-right rightArrowBig"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- footer start -->
+  <footer class="footer-container">
+    <div class="footer-box">
+      <img src="../images/mindful-logo2.png" alt="" />
+      <div class="logo-footer">
+        <p class="footer-p">
+          Mindful Stack Lab is a forward-thinking software development company committed to turning ideas into powerful
+          digital solutions.
+          We specialize in custom software, web and mobile app development, cloud integration, and digital
+          transformation — delivering innovative, scalable, and reliable technology that drives business growth and
+          success.
+        </p>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h4>quick link</h4>
+      <ul class="footer-link">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/aboutpage.html">About us</a></li>
+        <li><a href="../pages/services.html">Service</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>support</h4>
+      <ul class="footer-link">
+        <li><a href="../pages/aboutpage.html">Contact us</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h4>Contact Info</h4>
+      <ul class="footer-link">
+        <li>
+          <a href="#">
+            206, Setu Square Business Hub, New CG Road, Chandkheda, Ahmedabad, Gujarat</a>
+        </li>
+        <li>
+        <li> <a href="mailto:ankur.mindfulstack@gmail.com" class="email-link">ankur.mindfulstack@gmail.com</a></li>
+        </li>
+        <li>
+          <a href="tel:+919574667926">
+            +91 95746 67926
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="main-cpyroght">
+    <div class="footer-bottom">
+      <hr />
+      <div class="footer-copyright">
+        <h4 class="copy">Copyright © 2024 All Rights Reserved.</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer end -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nameInput = document.getElementById("name");
+          const emailInput = document.getElementById("email");
+          const mobileInput = document.getElementById("Mobile");
+          const messageInput = document.getElementById("message");
+
+          // Form validation
+          if (!nameInput || !emailInput || !mobileInput || !messageInput) {
+            alert("Form elements not found!");
+            return;
+          }
+
+          if (!nameInput.value || !emailInput.value || !mobileInput.value || !messageInput.value) {
+            alert("All fields are required!");
+            return;
+          }
+
+          const params = {
+            name: nameInput.value,
+            email: emailInput.value,
+            mobile: mobileInput.value,
+            message: messageInput.value
+          };
+
+          const serviceId = "service_fzn50hr";
+          const templateId = "template_cnoxojb";
+
+          // Disable submit button during processing
+          const submitBtn = document.getElementById("submit-btn");
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+          }
+
+          emailjs.send(serviceId, templateId, params)
+            .then(function (response) {
+              console.log("SUCCESS:", response);
+              form.reset();
+              showToast("Email sent successfully!");
+              alert("Email sent successfully!");
+            })
+            .catch(function (error) {
+              console.error("Error Details:", error);
+              showToast("Failed to send email: " + error.text, true);
+              alert("Failed to send email: " + error.text);
+            })
+            .finally(function () {
+              // Re-enable submit button
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Submit Message";
+              }
+            });
+        });
+      } else {
+        console.error("Contact form not found!");
+      }
+
+      function showToast(message, isError = false) {
+        const toast = document.getElementById("toast");
+        if (toast) {
+          toast.textContent = message;
+          toast.style.backgroundColor = isError ? "#dc3545" : "#28a745";
+          toast.classList.add("show");
+
+          setTimeout(function () {
+            toast.classList.remove("show");
+          }, 3000);
+        } else {
+          // Fallback if toast element is not found
+          console.log(message);
+        }
+      }
+    });
+  </script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
