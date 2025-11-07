@@ -160,53 +160,78 @@ nav .hamburger span {
   transition: background-color 0.3s ease;
 }
 
-/* Dropdown Menu Styles */
+/* ===== Dropdown CSS ===== */
 .dropdown {
   position: relative;
 }
 
+/* ===== Dropdown Menu ===== */
 .dropdown-menu {
-  display: none;
   position: absolute;
-  top: 100%;
+  top: 200%;
   left: 0;
   background-color: #dfff57;
-  min-width: 200px;
+  min-width: 225px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
   z-index: 1001;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
+  gap: 0px !important;
+
+  /* Default hidden state */
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  transform: translateY(-10px);
+  transition: all 0.35s ease;
+  /* smooth fade + slide */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
+/* ===== Show Menu on Hover ===== */
 .dropdown:hover .dropdown-menu {
-  display: flex;
   opacity: 1;
   visibility: visible;
-  gap: 0px !important;
+  transform: translateY(0);
 }
 
+/* ===== Menu Items ===== */
 .dropdown-menu li {
   width: 100%;
 }
 
 .dropdown-menu a {
-  color: black;
-  padding: 12px 16px;
+  color: #000000;
+  padding: 12px 18px;
   text-decoration: none;
   display: block;
   text-transform: capitalize;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease;
 }
 
+/* ===== Hover Effect on Items ===== */
 .dropdown-menu a:hover {
-  background-color: #dfff57;
-  /* Darker green for hover effect */
-  color: white;
+  background-color: #c6f94d;
+  color: #000000;
+  padding-left: 24px;
+  /* smooth slide effect on hover */
+}
+
+/* ===== Optional: Style parent link ===== */
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #dfff57;
 }
 
 /* Mobile Responsive Dropdown */
@@ -4032,6 +4057,7 @@ input {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer-section h3 {
@@ -4041,6 +4067,7 @@ input {
   letter-spacing: 0.5px;
   margin-bottom: 40px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 /* ===== CONTENT ===== */
